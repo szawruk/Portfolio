@@ -86,9 +86,12 @@ body{
     width: 100%;
     
 }
+.top-right a{
+    text-decoration: none;
+}
 .top-right .item{
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding:20px;
     text-align: center;
     
