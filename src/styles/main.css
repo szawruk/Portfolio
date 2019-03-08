@@ -19,35 +19,50 @@ body{
 
 .top{
     display:grid;
-    height: 450px;
+    height: 500px;
     grid-template-columns: repeat(7,1fr);
     background-image: url(../assets/komputery.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
     
 }
 
 .top-left{
     display: grid;
     grid-column: 1/span 4;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
+    padding-left: 5%;
     align-content: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.top img{
+    position: absolute;
+    /* background-image: url(../assets/dog.jpg); */
+    width: 17%;
+    background-size: cover;
+    border-radius: 50%;
+    top: 25%;
+    left:48.5%;
+    
+}
 .top-left p{
     font-weight: bold;
     font-size: 1.5rem;
+    margin-right: 15%;
 }
 .top-left p2{
     font-weight: bold;
     font-size: 1.2rem;
+    margin-right: 15%;
 }
 .top-left h1{
     margin: 0;
     font-size: 2.3rem;
+    margin-right: 15%;
     
 }
 .top-left span{
@@ -56,9 +71,28 @@ body{
 }
 
 .top-right{
+    display: grid;
     grid-column: 5/span 3;
     position: relative;
-    background-color: rgba(2, 206, 206, 0.95);
+    background-color: rgba(2, 158, 206, 0.95);
+    grid-template-rows: 1fr 80% 1fr;
+}
+.top-right nav{
+    margin-top: 10px;
+    grid-row: 1/span 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.top-right .item{
+    color: white;
+    font-weight: bold;
+    padding:20px;
+    text-align: center;
+    
+    
 }
 
 
