@@ -33,6 +33,7 @@ body{
     grid-column: 1/span 4;
     text-align: left;
     justify-content: left;
+    max-height: 500px;
     padding-left: 5%;
     align-content: center;
     position: relative;
@@ -76,6 +77,7 @@ body{
     position: relative;
     background-color: rgba(2, 158, 206, 0.95);
     grid-template-rows: 1fr 80% 1fr;
+    max-height: 500px;
 }
 .top-right nav{
     margin-top: 10px;
