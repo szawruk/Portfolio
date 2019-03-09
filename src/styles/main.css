@@ -144,7 +144,7 @@ body{
 
 .buttons{
     display: grid;
-    grid-auto-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .buttons .text{
@@ -162,6 +162,7 @@ body{
     grid-row: 2 /span 1;
     display: flex;
     justify-content: center;
+    height: 60px;
 }
 
 .buttons .two-button-menu a{
