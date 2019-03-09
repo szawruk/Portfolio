@@ -1,6 +1,6 @@
 @import "variables.css";
 :root{
-    font-family: Raleway;
+    font-family: 'Open Sans';
     font-size: 18px;
 }
 
@@ -31,7 +31,7 @@ body{
 .top-left{
     display: grid;
     grid-column: 1/span 4;
-    text-align: left;
+    text-align: center;
     justify-content: left;
     max-height: 500px;
     padding-left: 5%;
@@ -52,7 +52,7 @@ body{
 }
 .top-left p{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-right: 15%;
 }
 .top-left p2{
@@ -62,7 +62,8 @@ body{
 }
 .top-left h1{
     margin: 0;
-    font-size: 2.3rem;
+    font-size: 2rem;
+    margin: 0;
     margin-right: 15%;
     
 }
@@ -76,27 +77,60 @@ body{
     grid-column: 5/span 3;
     position: relative;
     background-color: rgba(2, 158, 206, 0.95);
-    grid-template-rows: 1fr 80% 1fr;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
     max-height: 500px;
 }
 .top-right nav{
     margin-top: 10px;
     grid-row: 1/span 1;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));      
 }
 .top-right a{
     text-decoration: none;
 }
 .top-right .item{
     color: white;
-    /* font-weight: bold; */
-    padding:20px;
-    text-align: center;
+    padding:0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;    
     
+}
+
+.top-right .social-media{
+    grid-row: 4/span 1;
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 10px;
+    align-items: center;
+}
+.top-right .social-media .fab{
+   
+    color: white;
+    margin: 10px;  
+}
+.top-right .social-media .fa-github{
+    margin-right: 20px;
+}
+
+.top-right .linki-text{
+    grid-row: 3/span 1;
+    display: flex;
+    margin-right: 20px;
+    justify-content: flex-end;
+    
+    
+    
+}
+
+.top-right .linki-text p{
+    font-size: 0.7rem;
+    padding-left: 20px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
     
 }
 
