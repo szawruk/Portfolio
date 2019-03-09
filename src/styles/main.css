@@ -13,13 +13,14 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: gainsboro;
     
 }
 
 .grid-container{
     display: grid;
-    grid-gap: 20px;
-    grid-template-rows: repeat(6,1fr);
+    /* grid-gap: 20px; */
+    /* grid-template-rows: repeat(6,1fr); */
 }
 
 .top{
@@ -143,6 +144,7 @@ body{
 /*///////////////////////////////////////////////////////////////// KONIEC TOP*/
 
 .buttons{
+    background-color: white;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -210,5 +212,68 @@ body{
     .buttons .text{
         font-size: 1rem;
         padding: 10px;
+    }
+}
+
+/*////////////////////////////////KONIEC BUTTONS*/
+
+.o_mnie-container{
+    display: grid;
+    margin: 50px;
+    grid-template-areas: 
+    "h h h h h h"
+    "n n i i i i"
+}
+
+.o_mnie-container .o_mnie-label{
+    grid-area: h;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+}
+
+.o_mnie-container .o_mnie-kontakt{
+    grid-area: n;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 147, 192);
+    font-weight: bold;
+    padding: 20px;
+}
+.o_mnie-container .o_mnie-kontakt span{
+    
+    color: black;
+}
+
+.o_mnie-container .o_mnie-opis{
+    grid-area: i;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-left: 3px solid rgb(0, 147, 192);
+}
+
+.o_mnie-container .o_mnie-opis p{
+    text-align: justify;
+}
+
+@media (max-width:500px)
+{
+    .o_mnie-container{
+        display: grid;
+        margin: 20px;
+        grid-template-areas: 
+        "h h "
+        "n n "
+        "i i "
+    }
+    .o_mnie-container .o_mnie-opis{
+       
+        border-left: none;
+        border-top: 3px solid rgb(0, 147, 192);
     }
 }
