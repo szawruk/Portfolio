@@ -141,6 +141,22 @@ body{
     border-bottom: 2px solid white;
     
 }
+
+@media (max-width:500px)
+{
+    .top-right .item{
+        font-size: 0.9rem; 
+        margin:5px;
+           
+        
+    }
+    .top-right nav{
+        grid-template-columns: repeat(auto-fit,minmax(110px,1fr));      
+    }
+    .top-right .social-media{
+        grid-gap: 0px;
+    }
+}
 /*///////////////////////////////////////////////////////////////// KONIEC TOP*/
 
 .buttons{
@@ -202,20 +218,25 @@ body{
 }
 
 
-@media (max-width:400px)
+@media (max-width:500px)
 {
     .buttons .two-button-menu a{
         width: 120px;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-top: 0;
     } 
     .buttons .text{
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 10px;
     }
+    .buttons .two-button-menu a{
+        width:100px;
+        
+    }
+    
 }
 
-/*////////////////////////////////KONIEC BUTTONS*/
+/*//////////////////////////////////////////////////////////////////KONIEC BUTTONS*/
 
 .o_mnie-container{
     display: grid;
@@ -259,13 +280,14 @@ body{
 
 .o_mnie-container .o_mnie-opis p{
     text-align: justify;
+    
 }
 
 @media (max-width:500px)
 {
     .o_mnie-container{
         display: grid;
-        margin: 20px;
+        margin: 0px;
         grid-template-areas: 
         "h h "
         "n n "
@@ -275,5 +297,9 @@ body{
        
         border-left: none;
         border-top: 3px solid rgb(0, 147, 192);
+        font-size: 0.9rem;
+    }
+    .o_mnie-container .o_mnie-kontakt{
+        font-size: 0.9rem;
     }
 }
