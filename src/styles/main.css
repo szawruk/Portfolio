@@ -568,4 +568,17 @@ body{
     }
 }
 
+@media (max-width:500px)
+{
+    .portfolio-container .foto
+{
+    box-sizing: border-box;
+    width: 200px;
+    border: 1px solid white;
+    
+}
+}
+
+}
+
 
