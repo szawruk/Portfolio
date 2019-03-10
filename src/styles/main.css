@@ -577,7 +577,7 @@ body{
 .kontakt-container .kontakt-left{
     box-sizing: border-box;
     grid-area: a;
-    padding: 5%;
+    padding: 2%;
     padding-right: 15%;
     display: flex;
     flex-direction: column;
@@ -588,7 +588,7 @@ body{
 
 .kontakt-container .kontakt-right{
     grid-area: b;
-    padding:5%;
+    padding:2%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -602,7 +602,7 @@ body{
 }
 
 .kontakt-left .empty-item{
-    flex: 1;
+    flex:4;
 }
 
 .kontakt-left .bold{
@@ -657,7 +657,7 @@ input[type="text"] {
     
 }
 
-@media (max-width:1000px)
+@media (max-width:1000px) 
 {
     .kontakt-container{
         
@@ -665,12 +665,25 @@ input[type="text"] {
         "a"
         "b";
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 20px 0;
+        grid-template-rows: 3fr 5fr;
+        margin: 20px 50px;
         
+    }
+    .kontakt-left .empty-item{
+        flex:0;
+    }
+    #linia-space{
+        margin-bottom: 10px;
     }
     
     
+}
+
+@media (max-width:500px)
+{
+    .kontakt-container{
+        margin: 20px 0;
+    }
 }
 
 
