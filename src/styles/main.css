@@ -473,7 +473,7 @@ body{
     width: 350px;
     margin: 10px;
     background-color: #fff;
-    flex-grow: 1;
+    flex: 1 0 30%;
     
 }
 
@@ -535,15 +535,6 @@ body{
 }
 
 
-@media (min-width:1560px)
-{
-    .portfolio-container .foto
-    {
-        width: 460px;
-       
-        
-    }  
-}
 
 @media (max-width:500px)
 {
@@ -554,7 +545,7 @@ body{
     }
     .portfolio-container .foto
     {
-        margin: 10px 0px;
+        margin: 10px 10px;
     }
 
     .portfolio-label
@@ -568,17 +559,6 @@ body{
     }
 }
 
-@media (max-width:500px)
-{
-    .portfolio-container .foto
-{
-    box-sizing: border-box;
-    width: 200px;
-    border: 1px solid white;
-    
-}
-}
 
-}
 
 
