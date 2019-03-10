@@ -470,7 +470,6 @@ body{
 {
     display: flex;
     flex-direction: column;
-    width: 350px;
     margin: 10px;
     background-color: #fff;
     flex: 1 0 30%;
@@ -546,6 +545,8 @@ body{
     .portfolio-container .foto
     {
         margin: 10px 10px;
+        flex: 1 0 60%;
+        font-size: 0.9rem;
     }
 
     .portfolio-label
@@ -558,6 +559,7 @@ body{
         font-size: 1.2rem;
     }
 }
+
 
 
 
