@@ -544,7 +544,7 @@ body{
     }
     .portfolio-container .foto
     {
-        margin: 10px 10px;
+        margin: 10px 3px;
         flex: 1 0 40%;
         font-size: 0.9rem;
     }
@@ -560,7 +560,117 @@ body{
     }
 }
 
+/*//////////////////////////////////////////////////////////////////KONIEC PORTFOLIO*/  
 
+.kontakt-container{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-areas: 
+    "a b b";
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: repeat(auto-fit,minmax(100px,1fr)); */
+    margin: 20px 50px;
+    background-color: #fff;
+    /* min-height: 500px; */
+}
 
+.kontakt-container .kontakt-left{
+    box-sizing: border-box;
+    grid-area: a;
+    padding: 5%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 147, 192);
+    /* max-height: 500px; */
+
+}
+
+.kontakt-container .kontakt-right{
+    grid-area: b;
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.kontakt-left p{
+    color: white;
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.kontakt-left .empty-item{
+    flex: 1;
+}
+
+.kontakt-left .bold{
+    font-weight: bold;
+}
+
+.kontakt-left .social-media{
+    flex: 1;
+    display: flex;
+}
+
+.kontakt-left .social-media .fab{
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.kontakt-left .social-media .fa-facebook-square{
+    padding-left: 0px;
+}
+
+input[type="text"] {
+    width: 80%;
+    display: block;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(0, 147, 192);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: black;
+    font-family: 'Open Sans';
+}
+
+.kontakt-right p{
+    align-self: center;
+    color: rgb(0, 147, 192);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#kontakt-wiadomosc{
+    margin-top: 20px;
+    height: 150px;
+    width: 80%;
+    border:  1px solid rgb(0, 147, 192);
+    color: black;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    resize: none;
+    overflow: auto;
+    
+}
+
+@media (max-width:1000px)
+{
+    .kontakt-container{
+        
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 20px 0;
+        
+    }
+    
+    
+}
 
 
