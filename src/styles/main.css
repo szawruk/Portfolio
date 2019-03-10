@@ -241,6 +241,7 @@ body{
 .o_mnie-container{
     display: grid;
     margin: 50px;
+    margin-bottom: 10px;
     grid-template-areas: 
     "h h h h h h"
     "n n i i i i"
@@ -248,11 +249,12 @@ body{
 
 .o_mnie-container .o_mnie-label{
     grid-area: h;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .o_mnie-container .o_mnie-kontakt{
@@ -305,6 +307,7 @@ body{
     .o_mnie-container .o_mnie-label{
         margin-bottom: 10px;
         margin-top: 10px;
+        font-size: 1.2rem;
     }
 }
 
@@ -347,18 +350,20 @@ body{
       "t t"
       "l r";
       grid-template-columns: 50% 50%;
+      margin-top: 50px;
       
   }
   .umiejetnosci-label{
     grid-area: t;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    
 }
 
 .umiejetnosci-label p{
     font-weight: bold;
+    font-size: 2rem;
 }
 
 .umiejetnosci-twarde{
@@ -405,7 +410,16 @@ body{
         "r";
         grid-template-columns: 100%;
         font-size: 0.9rem;
+        margin-top: 10px;
         
+    }
+
+    .umiejetnosci-label p{
+        font-size: 1.2rem;
+    }
+    .umiejetnosci-label{
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
 
     .umiejetnosci-miekkie{
@@ -427,4 +441,131 @@ body{
     }
 }
 
+  /*//////////////////////////////////////////////////////////////////KONIEC UMIEJETNOSCI*/  
+
+  .portfolio-label{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-weight: bold;
+      font-size: 2rem;
+  }
+
+
+.portfolio-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+.portfolio-container .foto
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 10px;
+    background-color: #fff;
+    flex-grow: 1;
     
+}
+
+
+.portfolio-container .foto .link
+{
+    color:rgb(0, 147, 192);
+    margin: 0 10px;  
+    
+}
+
+.portfolio-container .foto .overlay
+{
+     position: relative;
+}
+
+.portfolio-container .foto .overlay .link
+{
+     margin: 0;
+     position: absolute;
+     color: white;
+     display: flex;
+     justify-content: center;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     background-color: goldenrod;
+     opacity: 0;
+     transition: all 0.5s ease-in-out;
+     align-items: center;
+     font-size: 2rem;
+}
+
+.portfolio-container .foto .overlay .link:hover
+{
+    opacity: 0.7;
+}
+
+.portfolio-container .foto p
+{
+    font-weight: bold;
+    margin: 0 10px;
+    margin-top: 10px;
+    
+}
+
+.portfolio-container .foto i
+{
+    margin: 15px 10px;
+    color: rgb(155, 153, 153);
+}
+
+.portfolio-container .foto img
+{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+@media (min-width:1560px)
+{
+    .portfolio-container .foto
+    {
+        width: 460px;
+       
+        
+    }  
+}
+
+@media (max-width:500px)
+{
+    .portfolio-container
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .portfolio-container .foto
+    {
+        margin: 10px 0px;
+    }
+
+    .portfolio-label
+    {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+
