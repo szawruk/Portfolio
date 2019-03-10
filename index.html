@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
 </head>
 <body>
     <div id="grid-container">
@@ -71,8 +72,31 @@
             </div>
         </div>
 
-        <div class="umiejetnosci" id="umiejetnosci">
+        <div class="umiejetnosci-container" id="umiejetnosci">
+            <div class="umiejetnosci-label">
+                <p>Umiejętności</p>
+            </div> 
 
+            <div class="umiejetnosci-twarde">
+                <p class="srodek">Twarde</p>
+                <p>html</p>
+                <input type="range" min="1" max="100" value="80" class="slider" id="myRange">
+                <p>css</p>
+                <input type="range" min="1" max="100" value="80" class="slider" id="myRange">
+                <p>java script</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+            </div>
+
+            <div class="umiejetnosci-miekkie">
+                    <p class="srodek">Miękkie</p>
+                    <p>praca w zespole</p>
+                    <input type="range" min="1" max="100" value="90" class="slider" id="myRange">
+                    <p>radzenie sobie ze stresem</p>
+                    <input type="range" min="1" max="100" value="70" class="slider" id="myRange">
+                    <p>logiczne myślenie</p>
+                    <input type="range" min="1" max="100" value="90" class="slider" id="myRange">
+            </div>
         </div>
 
         <div class="portfolio" id="portfolio">
@@ -84,6 +108,7 @@
         </div>
 
     </div>
+    
     
 </body>
 </html>
