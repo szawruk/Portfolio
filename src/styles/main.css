@@ -586,7 +586,8 @@ body{
     grid-template-areas: 
     "a b b";
     grid-template-columns: 1fr 2fr;
-    margin: 20px 50px;
+    margin: 20px 0;
+    padding: 50px 50px;
     background-color: #fff;/
 }
 
@@ -608,6 +609,7 @@ body{
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
+    background-color: rgb(238, 238, 238);
 }
 
 .kontakt-left p{
@@ -651,6 +653,7 @@ input[type="text"] {
     word-break: break-all;
     color: black;
     font-family: 'Open Sans';
+    background-color: rgb(238, 238, 238);
 }
 
 .kontakt-right p{
@@ -660,6 +663,7 @@ input[type="text"] {
     font-weight: bold;
 }
 #kontakt-wiadomosc{
+    background-color: rgb(238, 238, 238);
     margin-top: 20px;
     height: 150px;
     width: 80%;
@@ -681,7 +685,8 @@ input[type="text"] {
         "b";
         grid-template-columns: 1fr;
         grid-template-rows: 3fr 5fr;
-        margin: 20px 50px;
+        padding: 20px 50px;
+        
         
     }
     .kontakt-left .empty-item{
@@ -698,6 +703,8 @@ input[type="text"] {
 {
     .kontakt-container{
         margin: 20px 0;
+        padding: 20px 0px;
+        
     }
 }
 
