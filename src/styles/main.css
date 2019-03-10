@@ -721,3 +721,9 @@ input[type="text"] {
     transform: rotate(360deg);
 }
 
+/*FOOTER*/
+footer{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
