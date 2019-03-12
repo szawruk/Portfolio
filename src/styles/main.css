@@ -682,6 +682,9 @@ input[type="text"] {
     background-color: rgb(238, 238, 238);
     outline: none;
 }
+input[type="text"]:focus {
+    border-bottom: 1px solid red;
+}
 
 .kontakt-right p{
     align-self: center;
@@ -702,6 +705,10 @@ input[type="text"] {
     overflow: auto;
     outline: none;
     
+}
+
+#kontakt-wiadomosc:focus{
+    border: 1px solid red;
 }
 
 @media (max-width:1000px) 
