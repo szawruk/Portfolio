@@ -683,7 +683,7 @@ input[type="text"] {
     outline: none;
 }
 input[type="text"]:focus {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid goldenrod;
 }
 
 .kontakt-right p{
@@ -708,7 +708,7 @@ input[type="text"]:focus {
 }
 
 #kontakt-wiadomosc:focus{
-    border: 1px solid red;
+    border: 1px solid goldenrod;
 }
 
 @media (max-width:1000px) 
